@@ -14,3 +14,23 @@ GPIO13: GPIO/UART0_RX/I2C0_SCL/SPI1_CSn
 
 J3:
 I2C0, GND, and 3.3V
+
+| End Symb |  |
+| --- | --- |
+| PICO_SDK_PATH | point to <path>/pico-sdk |
+| PICO_EXTRAS_PATH | point to <path>/pico-extras |
+
+Clone the pico repositories:
+* https://github.com/raspberrypi/pico-sdk.git
+* https://github.com/raspberrypi/pico-extras.git
+* Install the picotool repository
+
+How to build:
+* First time:
+ * make build directory in the source directory: mkdir build
+ * chdir build
+** cmake ..
+* every time
+ * Change into build directory
+ * Start build using "make"
+ * install to pico: picotool load test.uf2 && picotool reboot
