@@ -15,6 +15,11 @@ GPIO13: GPIO/UART0_RX/I2C0_SCL/SPI1_CSn
 J3:
 I2C0, GND, and 3.3V
 
+HTTP Links and cloning:
+* https://github.com/raspberrypi/picotool
+* https://github.com/raspberrypi/pico-sdk
+* https://github.com/raspberrypi/pico-extras
+
 | End Symb |  |
 | --- | --- |
 | PICO_SDK_PATH | point to <path>/pico-sdk |
@@ -29,7 +34,7 @@ How to build:
 * First time:
  * make build directory in the source directory: mkdir build
  * chdir build
-** cmake ..
+ * cmake ..
 * every time
  * Change into build directory
  * Start build using "make"
